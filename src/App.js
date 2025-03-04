@@ -1,19 +1,25 @@
-import React, { useState } from 'react';
+import React, { useContext } from "react";
+import { ThemeContext, ThemeProvider } from "./themecontext";
 
-function App() {
-    const [count, setCount] = useState(0);
-
-    const increment = () => setCount(count + 1);
-    const decrement = () => setCount(count - 1);
-
+function ThemeSwitcher() {
+    const { theme, setTheme } = useContext(ThemeContext);
     return ( <
         div >
         <
-        h1 > Counter: { count } < /h1> <
-        button onClick = { increment } > Increment < /button> <
-        button onClick = { decrement } > Decrement < /button> <
+        p > Current Theme: { theme } < /p> <
+        button onClick = {
+            () => setTheme(theme === "light" ? "dark" : "light") } >
+        Toggle Theme <
+        /button> <
         /div>
     );
 }
-
-export default App;
+export default function App() {
+    return ( <
+        ThemeProvider >
+        <
+        ThemeSwitcher / >
+        <
+        /ThemeProvider >
+    );
+}
