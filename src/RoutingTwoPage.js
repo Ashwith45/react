@@ -17,7 +17,7 @@ function App() {
     const [team, setTeam] = useState([]);
 
     const handleLogin = () => {
-        if (username === "admin" && password === "password") {
+        if (username === "Ashwith" && password === "Ashwith@45") {
             setIsLoggedIn(true);
         } else {
             alert("Invalid credentials");
