@@ -1,15 +1,12 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
-import App from "./Ecommerce/EcommercePage2";
-import './Ecommerce/EcommercePage2.css';
-//import App from "./App"; // Ensure you're importing the correct component
-//import "./employee.css"; // Import CSS if needed
+import ReactDOM from "react-dom/client"; // ✅ Use `react-dom/client` for React 18
+import DragDropList from "./DragDrop/DragDropList";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
+const root = ReactDOM.createRoot(document.getElementById("root")); // ✅ Use `createRoot`
 root.render( <
     React.StrictMode >
     <
-    App / >
+    DragDropList / >
     <
     /React.StrictMode>
 );
