@@ -5,12 +5,13 @@ At the highest level, we have just one process, which represents the system as a
  
  
 +-------------------------------+ 
-|  External Entities           |                          | 
-|   - User                          | 
+|  External Entities           |                           
+|   - User                      | 
 +-------------------------------+ 
-          |           |           v 
+          |           |       
+          v 
 +-------------------------------+ 
-|  Drag and Drop System | 
+|  Drag and Drop System         | 
 |  (Process 1.0)                | 
 +-------------------------------+ 
  

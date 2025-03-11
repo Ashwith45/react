@@ -4,13 +4,14 @@ At the highest level, we have just one process, which represents the system as a
  
  
 +---------------------------------+ 
-|    External Entities           |                    | 
-|     - User                          | 
-|     - Admin                        | 
+|    External Entities             |                    
+|     - User                       | 
+|     - Admin                      | 
 +----------------------------------+ 
-          |           v 
+          |           
+          v 
 +----------------------------------+ 
-|    Ecommerce System   | 
+|    Ecommerce System              | 
 |    (Process 1.0)                 | 
 +----------------------------------+ 
  

@@ -4,8 +4,8 @@ Level 0 (Context Diagram)
 At the highest level, we have just one process representing the system as a whole. 
  
 +-----------------------+ 
-|  External Entities    |                   | 
-|   - User             | 
+|  External Entities    |                   
+|   - User               | 
 +-----------------------+ 
           | 
           v 
