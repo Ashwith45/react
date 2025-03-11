@@ -4,17 +4,18 @@ Level 0 (Context Diagram)
 At the highest level, we have just one process, which represents the system as a whole. 
 +-------------------------------+ 
 |  External Entities           |                          
-|   - User                          | 
+|   - User                     | 
 +-------------------------------+ 
-          |           | 
+          |           
           v 
 +-------------------------------+ 
-|  User Registration          | 
-|  System (Process 1.0)   | 
+|  User Registration            | 
+|  System (Process 1.0)         | 
 +-------------------------------+ 
-          |           |           v 
+          |             
+          v 
 +-------------------------------+ 
-|   Data Store: User DB   | 
+|   Data Store: User DB         | 
 +-------------------------------+ 
  
  
@@ -30,14 +31,14 @@ Explanation:
 Level 1 DFD (Decomposition of Process) 
 Now, let's break down the Login System process (Process 1.0) into more detailed steps. 
 +------------------------------+       
- |      External Entity        |         
+|      External Entity         |         
 |         (User)               |              
 +------------------------------+         
           |                                         
           v                              
  +-----------------------------+       
- |    Process: 1.1 - User  | 
- |       Input Details          | 
+ |    Process: 1.1 - User      | 
+ |       Input Details         | 
  +-----------------------------+       
          |  
          V                         
@@ -48,7 +49,7 @@ Now, let's break down the Login System process (Process 1.0) into more detailed 
          |         
          v 
 +------------------------------+ 
-|    Data Store: User DB | 
+|    Data Store: User DB       | 
 +------------------------------+ 
          |         
          v 

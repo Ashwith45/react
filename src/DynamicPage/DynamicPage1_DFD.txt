@@ -5,7 +5,7 @@ At the highest level, we have just one process representing the system as a whol
  
 +-----------------------+ 
 |  External Entities    |                   
-|   - User               | 
+|   - User              | 
 +-----------------------+ 
           | 
           v 
@@ -33,26 +33,31 @@ Now, let's break down the DynamicPage System (Process 1.0) into more detailed st
  
 +-----------------------+ 
 |    External Entity    | 
-|        (User)        | 
+|        (User)         | 
 +-----------------------+           
-          |           v 
-+------------------------+ 
-|  Process: 1.1 - Render Navigation | 
-|   (Navbar.js)                    | 
-+------------------------+         
-          |           v 
+          |           
+          v 
++------------------------------------+ 
+|  Process: 1.1 - Render Navigation  | 
+|   (Navbar.js)                      | 
++------------------------------------+         
+          |          
+          v 
 +--------------------------------------------------------------+ 
-|  Process: 1.2 - Route to Pages                          | 
-|   (DynamicPageApp.js)                                     | 
+|  Process: 1.2 - Route to Pages                               | 
+|   (DynamicPageApp.js)                                        | 
 +--------------------------------------------------------------+ 
       |                  |                 |                 | 
-      v                 v                v                v 
-+-----------+ +-----------+ +----------+ +-----------+ 
-| About.js  | | Contact.js | | Home.js  | | Post.js   | +-----------+ +-----------+ +----------+ +-----------+          |           v 
-+-----------------------------------------+ 
-|  Process: 1.3 - Handle Errors   | 
-|   (NotFound.js)                          | 
-+-----------------------------------------+ 
+      v                  v                 v                 v 
++-----------+      +-----------+       +----------+       +-----------+ 
+| About.js  |      | Contact.js|       | Home.js  |       | Post.js   | 
++-----------+      +-----------+       +----------+       +-----------+          
+                                  |           
+                                  v 
++---------------------------------------------------------------------+ 
+|  Process: 1.3 - Handle Errors                                       | 
+|   (NotFound.js)                                                     | 
++---------------------------------------------------------------------+ 
  
  
  

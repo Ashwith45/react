@@ -4,7 +4,7 @@ Level 0 (Context Diagram)
 At the highest level, we have just one process representing the system as a whole. 
  
 +--------------------------------+ 
-|    External Entities           |                  | 
+|    External Entities           |                  
 |      - User                    | 
 +--------------------------------+ 
           |         
@@ -33,7 +33,7 @@ Now, let's break down the ThemeContext System (Process 1.0) into more detailed s
  
 +-----------------------+ 
 |    External Entity    | 
-|        (User)        | 
+|        (User)         | 
 +-----------------------+ 
           |         
           v 
