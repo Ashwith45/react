@@ -29,34 +29,39 @@ Explanation:
 Level 1 DFD (Decomposition of Process) 
 Now, let's break down the Ecommerce System (Process 1.0) into more detailed steps. 
  
-+-----------------------+             +---------------------------------+ 
-|    External Entity    |             |      External Entity           | 
-|        (User)        |        |         |         (Admin)                   | 
++-----------------------+             +----------------------------------+ 
+|    External Entity    |             |      External Entity             | 
+|        (User)        |              |         (Admin)                  | 
 +-----------------------+              +---------------------------------+ 
           |                                                 | 
-          v                                                v 
+          v                                                 v 
 +-----------------------------+       +---------------------------------+ 
-|  Process: 1.1 - User   |         |  Process: 1.2 - Admin     | 
-|   Login (UserLogin.js) |         |   Login (AdminLogin.js)   | 
-+-----------------------------+        +--------------------------------+ 
-          |                                                  |           v                                                 v 
+|  Process: 1.1 - User   |            |  Process: 1.2 - Admin           | 
+|   Login (UserLogin.js) |            |   Login (AdminLogin.js)         | 
++-----------------------------+       +---------------------------------+ 
+          |                                                 |          
+          v                                                 v 
 +------------------------------+       +----------------------------------+ 
-|  Process: 1.3 - User     |        |  Process: 1.4 - Admin      | 
-|   Panel (UserPanel.js)  |        |   Panel (AdminPanel.js)   | 
+|  Process: 1.3 - User         |       |  Process: 1.4 - Admin            | 
+|   Panel (UserPanel.js)       |       |   Panel (AdminPanel.js)          | 
 +------------------------------+       +----------------------------------+ 
-          |           v 
+          |          
+          v 
 +--------------------------------------------+ 
-| Process: 1.5 - Browse                  | 
-|  Products (EcommercePage.js)    | 
+| Process: 1.5 - Browse                      | 
+|  Products (EcommercePage.js)               | 
 +---------------------------------------------+ 
-          |           v 
+          |           
+          v 
 +------------------------------------+ 
-| Process: 1.6 - Add to Cart   | 
-|   (Cart.js)                              | 
+| Process: 1.6 - Add to Cart         | 
+|   (Cart.js)                        | 
 +------------------------------------+ 
-          |           v 
+          |           
+          v 
 +--------------------------------------+ 
-| Process: 1.7 � Payment        | |   (Payment.js)                        | 
+| Process: 1.7                         |
+| Payment                              | 
 +--------------------------------------+ 
  
  
