@@ -1,0 +1,84 @@
+/* General Styling */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+
+/* Navigation Bar */
+
+nav {
+    background-color: #b71c1c;
+    /* Deep Red (Symbolizing Emergency) */
+    padding: 15px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    display: block;
+    padding: 12px;
+    background-color: #d32f2f;
+    /* Red Alert Theme */
+    border-radius: 8px;
+    transition: background 0.3s ease;
+    width: 200px;
+}
+
+nav ul li a:hover {
+    background-color: #ff5252;
+    color: #fff;
+}
+
+
+/* Main Container */
+
+div {
+    text-align: center;
+    padding: 20px;
+}
+
+h2 {
+    color: #d32f2f;
+    /* Emergency Theme */
+}
+
+
+/* Buttons for actions */
+
+button,
+.home-btn {
+    background-color: #ff6f00;
+    /* Amber (Warning) */
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+button:hover,
+.home-btn:hover {
+    background-color: #ff9100;
+}
